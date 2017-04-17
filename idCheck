@@ -1,0 +1,37 @@
+<%
+String id = request.getParameter("id");
+boolean result=sdao.idCheck(id);
+int idLength=id.length();
+boolean b_s=false;
+for(int i= 0; i<id.length(); i++){
+	char c= id.charAt(i);
+	if(c>='0' && c<='9'){}
+	else if (c>= 'a' && c<='z'){}
+	else b_s=true;
+}
+
+if(b_s||id==null||id.equals("")){
+	%>
+	<script>
+	window.alert('특수문자, 한글, 알파벳 대문자 사용 불가');
+	location.href='idCheck.jsp';
+	</script>
+	<%
+	return ;
+}
+if(result){
+	%>
+	<script>
+	window.alert('이미 가입된 ID 입니다');
+	location.href='idCheck.jsp';
+	</script>
+	<%
+	
+}else{
+%>
+<script>
+window.alert('<%=id%>는 사용가능한 ID 입니다');
+opener.document.join.id.value='<%=id%>';
+window.self.close();
+</script>
+<%}%>
