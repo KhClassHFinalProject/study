@@ -27,7 +27,7 @@ public class EmailDAO {
 			throws Exception{   //추후에 파라메터값 추가해서 인증번호 및 아이디 비밀번호(임시비밀번호 발급 가능)
 		
 		 // 발신, 수신 정보
-        final String fromEmail = "kdw4458";	//@gmail.com 입력할 필요없음. 아이디만쓰기
+        final String fromEmail = "khmaster2017";	//@gmail.com 입력할 필요없음. 아이디만쓰기
         final String password = "";			//비밀번호
         final String toEmail = email;
          
