@@ -28,6 +28,8 @@
 					}
 					else{
 						alert("사용가능한 아이디 입니다.");
+						$('#idcheck').attr('disabled',true);
+						$('#idcheck').css('backgroundColor',"#D8D8D8");
 						$('#idUseButton').attr('disabled',false);
 				}
 			});

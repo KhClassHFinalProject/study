@@ -23,6 +23,8 @@
 			}
 			else{
 				alert("사용가능한 아이디 입니다.");
+				document.getElementById("idcheck").disabled=true
+				document.getElementById("idcheck").style.backgroundColor="#D8D8D8";
 				document.getElementById("useButton").disabled=false;
 			}
 		}
