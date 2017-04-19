@@ -86,7 +86,7 @@
 		<tr>
 			<td>파일 확장자만</td>
 			<td><span id="nameExtension"></span></td>
-		</tr> 
+		</tr>
 	</table>
 </body>
 </html>
