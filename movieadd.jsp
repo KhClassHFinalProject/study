@@ -38,12 +38,12 @@
 						
 						for(var i=65-1 ; i<rowVal ; i++){
 							var rowName=String.fromCharCode(i+1);
-							$("table").append("<tr>");
-							$("table").append("<td class=" +rowName+ ">" +rowName+ "</td>");
+							var tableElement="<tr><td class=" +rowName+ ">" +rowName+ "</td>";
 							for(var j=0 ; j<colVal ; j++){
-								$("table").append("<td class=" +rowName+ ">" +(j+1)+ "</td>");
+								tableElement+="<td class=" +rowName+ ">" +(j+1)+ "</td>";
 							}
-							$("table").append("</tr>");
+							tableElement+="</tr>";
+							$("table").append(tableElement);
 							$("."+rowName+":gt(0)").css("border", "1px solid #000000");
 						}
 						$("table td").css("padding", "15px");
